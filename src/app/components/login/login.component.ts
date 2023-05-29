@@ -37,7 +37,7 @@ export class LoginComponent {
           password: passwordControl.value
         };
 
-      this.http.post('https://auth-jwt-eefg.onrender.com/auth/register', userData).subscribe(
+      this.http.post('https://good-gold-kitten-slip.cyclic.app/auth/register', userData).subscribe(
         (response) => {
           console.log(response);
           this.registrationSuccess = true;
@@ -60,7 +60,7 @@ export class LoginComponent {
         password: passwordControl.value
       };
 
-      this.http.post('https://auth-jwt-eefg.onrender.com/auth/login', userData).subscribe(
+      this.http.post('https://good-gold-kitten-slip.cyclic.app/auth/login', userData).subscribe(
         (response: any) => {
           if (response.auth === false) {
             this.errorMessage = response.token;

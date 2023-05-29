@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 
 export class ProductService {
-  private baseUrl = 'https://product-api-1v6i.onrender.com';
+  private baseUrl = 'https://silver-dove-fez.cyclic.app';
 
   constructor(private http: HttpClient) { }
 
