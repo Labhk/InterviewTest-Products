@@ -1,0 +1,106 @@
+<div class="main-content" [ngClass]="{ 'blur': isEditFormVisible }">
+  <div class="details">
+    <mat-card class="example-card" *ngIf="productDetails && productDetails.length > 0">
+        <mat-card-header>
+            <mat-card-title-group>
+            <mat-card-title>{{ productDetails[0].title }}</mat-card-title>
+            <mat-card-subtitle>Brand - {{ productDetails[0].brand }}</mat-card-subtitle>
+            <mat-card-subtitle color="accent">
+               Category - {{ productDetails[0].category }}
+            </mat-card-subtitle>
+            
+            <img mat-card-md-image [src]="productDetails[0].images">
+            </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content style="margin-top: 15px;">
+            {{ productDetails[0].description}}
+        </mat-card-content>
+        <mat-card-content>
+            <div class="content">
+                <div class="rating">
+                <mat-icon color="accent">star</mat-icon>
+                <span class="rate">{{ productDetails[0].rating }}</span>
+                </div>
+                <div class="price">
+                    <span class="original-price">${{ productDetails[0].originalPrice }}</span>
+                    <span class="discounted-price">${{ productDetails[0].discountPrice }}</span>
+                </div>
+                
+            </div>
+            <div class="stock">In Stock</div>
+        </mat-card-content>
+        <button mat-raised-button color="accent" (click)="showEditForm()" [disabled]="!isLoggedIn()">
+            <mat-icon>edit</mat-icon>
+            Edit Details
+        </button>
+    </mat-card>
+</div>
+</div>
+
+
+
+<div class="edit-form-container" [ngClass]="{ 'show': isEditFormVisible }">
+  <div class="edit-form" >
+    <div class="heading">
+      Edit Details
+    </div>
+    <div class="cross">
+      <button mat-icon-button color="warn" (click)="cancelEdit()">
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+    <form [formGroup]="editProductForm" (ngSubmit)="onSubmit()" style="padding: 30px; " >
+        <div class="form-row">
+          <mat-form-field style="width: 100%;"> 
+            <input matInput formControlName="title" placeholder="Title" required>
+          </mat-form-field>
+
+          <mat-form-field style="width: 100%;">
+            <input matInput formControlName="brand" placeholder="Brand" required>
+          </mat-form-field>
+        </div>
+        <div class="form-row">
+          <mat-form-field style="width: 100%;">
+            <textarea matInput formControlName="description" placeholder="Description" required></textarea>
+          </mat-form-field>
+        </div>
+        <div class="sub-title">Category :</div>
+        <div class="form-row" style="margin-bottom: 15px;">
+          
+          <mat-radio-group formControlName="category">
+              <mat-radio-button value="Food Items">Food Items</mat-radio-button>
+              <mat-radio-button value="Electronics">Electronics</mat-radio-button>
+              <mat-radio-button value="Clothes">Clothes</mat-radio-button>
+              <mat-radio-button value="Accessories">Accessories</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="form-row">
+          <mat-form-field style="width: 100%;">
+            <input matInput formControlName="originalPrice" placeholder="Original Price" required>
+          </mat-form-field>
+
+          <mat-form-field style="width: 100%;">
+            <input matInput formControlName="discountPrice" placeholder="Discounted Price" required>
+          </mat-form-field>
+        </div>
+        
+        <div class="form-row">
+          <mat-form-field style="width: 100%;">
+            <input matInput formControlName="rating" placeholder="Rating" required>
+          </mat-form-field>
+
+          <div class="sub-title">Availability :</div>
+          <mat-radio-group formControlName="availability">
+              <mat-radio-button value="In Stock">In Stock</mat-radio-button>
+              <mat-radio-button value="Out of Stock">Out of Stock</mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <div class="form-row" style="text-align: center">
+          <button mat-raised-button color="accent" type="submit" style="font-size: 18px; margin-top: 15px;margin-bottom: 30px;" [disabled]="editProductForm.invalid">Edit Product</button>
+          
+        </div>
+      </form>
+</div>
+</div>
+

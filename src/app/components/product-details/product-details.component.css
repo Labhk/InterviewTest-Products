@@ -1,0 +1,128 @@
+.details{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.example-card {
+    flex-basis: calc(50% - 20px); 
+    max-width: calc(50% - 20px);
+    margin: 10px;
+    margin-top: 65px; 
+    cursor: pointer;
+    padding: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.example-card button {
+    margin-top:30px;
+    margin-bottom: 15px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rate {
+    margin-left: 5px;
+    padding-top: 2px;
+    font-size: 16px;
+}
+
+.price {  
+    justify-content: flex-end;
+}
+
+
+
+.original-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+}
+
+.discounted-price {
+    font-weight:500;
+    font-size: 16px;
+}
+
+.stock{
+    display: flex;
+    font-size: 16px;
+    justify-content: flex-end; 
+    color: green;
+    margin-bottom: 30px;
+}
+
+.edit-form{
+    display: flex;
+    justify-content: center;
+}
+
+.spacer{
+    padding: 10px;
+}
+
+.sub-title{
+    padding-left: 15px;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.edit-form-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heading{
+    position: fixed;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cross{
+    position: absolute;
+    right: 29%;
+    top: 7.5%;
+  }
+
+  .show {
+    display: flex;
+  }
+  
+  .edit-form {
+    background-color: #fff;
+    padding: 20px;
+    max-height: 80vh; 
+    overflow-y: auto; 
+    
+  }
+  
+  .main-content.blur {
+    filter: blur(5px);
+  }
+  
+    
+@media screen and (max-width: 780px) {
+    .example-card {
+        flex-basis: 100%;
+        max-width: 100%; 
+    }
+}

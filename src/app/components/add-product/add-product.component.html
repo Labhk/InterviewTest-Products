@@ -1,0 +1,96 @@
+<div class="add-product">
+
+    <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()" style="padding: 30px; " >
+      <div class="form-row">
+
+        <mat-form-field style="width: 100%;">
+          <input matInput formControlName="title" placeholder="Title" required>
+        </mat-form-field>
+        <mat-error *ngIf="addProductForm.get('title')?.invalid && addProductForm.get('title')?.touched" style="margin-bottom: 10px;">
+          <ng-container *ngIf="addProductForm.get('title')?.hasError('required')">Title required</ng-container>
+          <ng-container *ngIf="addProductForm.get('title')?.hasError('maxlength')">Maximum length exceeded</ng-container>
+          <ng-container *ngIf="addProductForm.get('title')?.hasError('specialCharacters')">Special characters like @, #, $ are not allowed.</ng-container>
+        </mat-error>
+        
+        
+        <mat-form-field style="width: 100%;">
+          <input matInput formControlName="brand" placeholder="Brand" required>
+        </mat-form-field>
+        <mat-error *ngIf="addProductForm.get('brand')?.invalid && addProductForm.get('brand')?.touched" style="margin-bottom: 10px;">
+          <ng-container *ngIf="addProductForm.get('brand')?.hasError('required')">Brand required</ng-container>
+        </mat-error>
+
+      </div>
+
+      <div class="form-row">
+
+        <mat-form-field style="width: 100%;">
+          <textarea matInput formControlName="description" placeholder="Description" required></textarea>
+        </mat-form-field>
+        <mat-error *ngIf="addProductForm.get('description')?.invalid && addProductForm.get('description')?.touched" style="margin-bottom: 10px;">
+          <ng-container *ngIf="addProductForm.get('description')?.hasError('required')">Description required</ng-container>
+        </mat-error>
+
+      </div>
+
+      <div class="sub-title">Category :</div>
+      <div class="form-row" style="margin-bottom: 15px;">
+        
+        <mat-radio-group formControlName="category">
+            <mat-radio-button value="Food Items">Food Items</mat-radio-button>
+            <mat-radio-button value="Electronics">Electronics</mat-radio-button>
+            <mat-radio-button value="Clothes">Clothes</mat-radio-button>
+            <mat-radio-button value="Accessories">Accessories</mat-radio-button>
+          </mat-radio-group>
+
+      </div>
+
+      <div class="form-row">
+
+        <mat-form-field style="width: 100%;">
+          <input matInput formControlName="originalPrice" placeholder="Original Price" required>
+        </mat-form-field>
+        <mat-error *ngIf="addProductForm.get('originalPrice')?.invalid && addProductForm.get('originalPrice')?.touched" style="margin-bottom: 10px;">
+          <ng-container *ngIf="addProductForm.get('originalPrice')?.hasError('onlyNumbers')">Invalid input. Please enter a valid number.</ng-container>
+        </mat-error>
+
+
+        <mat-form-field style="width: 100%;">
+          <input matInput formControlName="discountPrice" placeholder="Discounted Price" required>
+        </mat-form-field>
+        <mat-error *ngIf="addProductForm.get('discountPrice')?.invalid && addProductForm.get('discountPrice')?.touched" style="margin-bottom: 10px;">
+          <ng-container *ngIf="addProductForm.get('discountPrice')?.hasError('onlyNumbers')">Invalid input.</ng-container>
+          <ng-container *ngIf="addProductForm.get('discountPrice')?.hasError('validateDiscountPrice')">Discounted price must be less than the original price</ng-container>
+        </mat-error>
+
+      </div>
+      
+      <div class="form-row">
+
+        <mat-form-field style="width: 100%;">
+          <input matInput formControlName="rating" placeholder="Rating" required>
+        </mat-form-field>
+        <mat-error *ngIf="addProductForm.get('rating')?.invalid && addProductForm.get('rating')?.touched" style="margin-bottom: 10px;">
+          <ng-container *ngIf="addProductForm.get('rating')?.hasError('onlyNumbers')">Invalid input. Please enter a valid number.</ng-container>
+          <ng-container *ngIf="addProductForm.get('rating')?.hasError('max')">Rating value should be less than or equal to 5</ng-container>
+        </mat-error>
+
+        <span class="spacer"></span>
+
+        <div class="sub-title">Availability :</div>
+        <mat-radio-group formControlName="availability">
+            <mat-radio-button value="In Stock">In Stock</mat-radio-button>
+            <mat-radio-button value="Out of Stock">Out of Stock</mat-radio-button>
+          </mat-radio-group>
+
+      </div>
+
+      <mat-error *ngIf="errorMessage" style="text-align: center; margin-bottom: 10px;">{{ errorMessage }}</mat-error>
+
+      <div class="form-row" style="text-align: center">
+        <button mat-raised-button color="accent" type="submit" style="font-size: 18px; margin-top: 15px;" [disabled]="addProductForm.invalid">Add Product</button>
+      </div>
+      
+    </form>
+  </div>
+  

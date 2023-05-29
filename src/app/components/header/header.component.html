@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <span [routerLink]="['/products']" style="cursor: pointer;">Products</span>
+    <span class="example-spacer"></span>
+  
+    <button mat-raised-button color="accent" [routerLink]="['/products/add']" [disabled]="!isLoggedIn()">
+      New Product
+    </button>
+    <span class="spacer"></span>
+    <button mat-raised-button color="accent" [routerLink]="['/products/login']" *ngIf="!isLoggedIn()">
+      <mat-icon>login</mat-icon>
+      Login
+    </button>
+    <button mat-raised-button color="accent" (click)="logout()" *ngIf="isLoggedIn()">
+      <mat-icon>logout</mat-icon>
+      Logout
+    </button>
+</mat-toolbar>
+  

@@ -1,0 +1,64 @@
+<div class="login">
+  <mat-tab-group>
+    <mat-tab>
+      
+      <ng-template mat-tab-label>Register</ng-template>
+      <div class="center">
+        <div class="form">
+          <form (ngSubmit)="registerUser()" [formGroup]="registerForm">
+            <div class="form-row">
+              <mat-form-field style="width: 100%">
+                <input matInput placeholder="Email" formControlName="email" required email>
+                <mat-error *ngIf="registerForm.get('email')?.hasError('email')">Invalid email</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-row">
+              <mat-form-field style="width: 100%">
+                <input matInput placeholder="Password" type="password" formControlName="password" required minlength="8">
+                <mat-error *ngIf="registerForm.get('password')?.hasError('required')">Password is required</mat-error>
+                <mat-error *ngIf="registerForm.get('password')?.hasError('minlength')">Password must be at least 8 characters long</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-row" style="text-align: center">
+              <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid" style="font-size: 18px;">Register</button>
+            </div>
+            <div class="success" style="text-align: center" *ngIf="registrationSuccess">
+              !!! Registration Successfull !!!<br/>
+              Proceed to Login
+            </div>
+          </form>
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>Login</ng-template>
+      <div class="center">
+        <div class="form">
+          <form (ngSubmit)="loginUser()" [formGroup]="loginForm">
+            <div class="form-row">
+              <mat-form-field style="width: 100%">
+                <input matInput placeholder="Email" formControlName="email" required email>
+                <mat-error *ngIf="loginForm.get('email')?.hasError('email')">Invalid email</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-row">
+              <mat-form-field style="width: 100%">
+                <input matInput placeholder="Password" type="password" formControlName="password" required minlength="8">
+                <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required</mat-error>
+                <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">Password must be at least 8 characters long</mat-error>
+              </mat-form-field>
+            </div>
+            <mat-error *ngIf="errorMessage" style="text-align: center; margin-bottom: 10px;">{{ errorMessage }}</mat-error>
+            <div class="form-row" style="text-align: center">
+              <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid" style="font-size: 18px;">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+
+

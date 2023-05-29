@@ -1,0 +1,10 @@
+.bottom-center {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  

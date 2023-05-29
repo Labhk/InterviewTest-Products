@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1,
+        "title": "iPhone 9",
+        "description": "The iPhone 9 is a high-quality smartphone developed by Apple. It offers a sleek design, advanced features, and a powerful operating system. With its impressive camera capabilities, fast performance, and a vibrant display, the iPhone 9 provides an exceptional user experience for communication, entertainment, and productivity.",
+        "originalPrice": 549,
+        "discountPrice": 499,
+        "rating": 4.6,
+        "availability": "In Stock",
+        "brand": "Apple",
+        "category": "Electronics",
+        "images": "https://i.ibb.co/0ZHbCzZ/responsive-design.png"
+      },
+      {
+        "id": 2,
+        "title": "Pizza Margherita",
+        "description": "Pizza Margherita is a classic Italian pizza known for its simplicity and delicious flavors. It features a thin crust topped with fresh mozzarella cheese, tomato sauce, and basil leaves. This timeless combination creates a harmonious balance of savory and tangy flavors that are loved by pizza enthusiasts around the world.",
+        "originalPrice": 12.99,
+        "discountPrice": 10.99,
+        "rating": 4.8,
+        "availability": "In Stock",
+        "brand": "Italian Pizzeria",
+        "category": "Food Items",
+        "images": "https://i.ibb.co/7pmnx9z/balanced-diet.png"
+      },      
+      {
+        "id": 3,
+        "title": "Men's T-Shirt",
+        "description": "The Men's T-Shirt is a versatile and essential piece of clothing in every man's wardrobe. It offers comfort and style, making it suitable for various occasions. Whether you prefer plain, graphic, or striped designs, the Men's T-Shirt is a go-to option for casual and effortless fashion.",
+        "originalPrice": 29.99,
+        "discountPrice": 24.99,
+        "rating": 4.2,
+        "availability": "In Stock",
+        "brand": "Fashion Brand",
+        "category": "Clothes",
+        "images": "https://i.ibb.co/WNrkw6n/clothes-rack.png"
+      },
+      {
+        "id": 4,
+        "title": "Wireless Bluetooth Headphones",
+        "description": "Wireless Bluetooth Headphones provide a convenient and tangle-free audio experience. They offer wireless connectivity to devices such as smartphones, tablets, or computers, allowing you to enjoy music, podcasts, or calls without the hassle of cords. With their comfortable fit and high-quality sound, wireless Bluetooth headphones enhance your listening experience on the go.",
+        "originalPrice": 79.99,
+        "discountPrice": 69.99,
+        "rating": 4.5,
+        "availability": "In Stock",
+        "brand": "AudioTech",
+        "category": "Electronics",
+        "images": "https://i.ibb.co/0ZHbCzZ/responsive-design.png"
+      },
+      {
+        "id": 5,
+        "title": "Women's Floral Dress",
+        "description": "The Women's Floral Dress is a feminine and fashionable garment featuring floral patterns or prints. It offers a flattering silhouette and a touch of elegance. Suitable for various occasions, such as parties, weddings, or casual outings, the Women's Floral Dress showcases a vibrant and stylish look that exudes grace and confidence.",
+        "originalPrice": 49.99,
+        "discountPrice": 39.99,
+        "rating": 4.7,
+        "availability": "In Stock",
+        "brand": "Fashion Brand",
+        "category": "Clothes",
+        "images": "https://i.ibb.co/WNrkw6n/clothes-rack.png"
+      },
+      {
+        "id": 6,
+        "title": "Chocolate Chip Cookies",
+        "description": "Chocolate Chip Cookies are classic and beloved treats enjoyed by people of all ages. They are made with a buttery, chewy dough infused with chocolate chips, resulting in a delightful combination of sweetness and texture. Whether enjoyed fresh from the oven or as a snack, Chocolate Chip Cookies provide a comforting and indulgent experience.",
+        "originalPrice": 9.99,
+        "discountPrice": 7.99,
+        "rating": 4.8,
+        "availability": "In Stock",
+        "brand": "Bakery Delights",
+        "category": "Food Items",
+        "images": "https://i.ibb.co/7pmnx9z/balanced-diet.png"
+      },      
+      {
+        "id": 7,
+        "title": "Men's Denim Jacket",
+        "description": "The Men's Denim Jacket is a timeless and versatile outerwear piece. It offers a rugged and casual style, perfect for layering over various outfits. With its durable denim fabric and practical features such as multiple pockets and button closures, the Men's Denim Jacket adds a touch of coolness and functionality to your wardrobe.",
+        "originalPrice": 79.99,
+        "discountPrice": 69.99,
+        "rating": 4.4,
+        "availability": "In Stock",
+        "brand": "Fashion Brand",
+        "category": "Clothes",
+        "images": "https://i.ibb.co/WNrkw6n/clothes-rack.png"
+      },
+      {
+        "id": 8,
+        "title": "Chicken Biryani",
+        "description": "Chicken Biryani is a flavorful and aromatic rice dish originating from the Indian subcontinent. It combines basmati rice with tender chicken, fragrant spices, and herbs to create a delicious and satisfying meal. With its rich and complex flavors, Chicken Biryani is a favorite among food lovers who enjoy the fusion of spices and textures in every bite.",
+        "originalPrice": 15.99,
+        "discountPrice": 12.99,
+        "rating": 4.9,
+        "availability": "In Stock",
+        "brand": "Biryani House",
+        "category": "Food Items",
+        "images": "https://i.ibb.co/7pmnx9z/balanced-diet.png"
+      },
+      {
+        "id": 9,
+        "title": "Leather Crossbody Purse",
+        "description": "The Leather Crossbody Purse is a stylish and versatile accessory that combines fashion and functionality. Made from high-quality leather, this purse offers a sleek and sophisticated look. With its compact size and adjustable crossbody strap, it provides convenience and hands-free carrying. ",
+        "originalPrice": 59.99,
+        "discountPrice": 49.99,
+        "rating": 4.5,
+        "availability": "In Stock",
+        "brand": "Fashion Accessories",
+        "category": "Purse",
+        "images": "https://i.ibb.co/bF3vnd2/bags.png"
+      },
+      {
+        "id": 10,
+        "title": "Silver Pendant Necklace",
+        "description": "A Silver Pendant Necklace is a timeless and elegant piece of jewelry that adds a touch of sophistication to any outfit. Crafted from high-quality sterling silver, it showcases a beautiful pendant suspended from a delicate chain.The pendant design can vary, ranging from intricate patterns and motifs to minimalist and contemporary styles.",
+        "originalPrice": 79.99,
+        "discountPrice": 69.99,
+        "rating": 4.7,
+        "availability": "In Stock",
+        "brand": "Jewelry Emporium",
+        "category": "Jewelry",
+        "images": "https://i.ibb.co/bF3vnd2/bags.png"
+      },
+      {
+        "id": 11,
+        "title": "Smart Home Security Camera",
+        "description": "A Smart Home Security Camera is an essential component of any modern home security system. It is a technologically advanced device that enables you to monitor and protect your home remotely.This security camera is equipped with high-definition video capabilities, capturing clear and detailed footage both during the day and at night. ",
+        "originalPrice": 129.99,
+        "discountPrice": 99.99,
+        "rating": 4.6,
+        "availability": "In Stock",
+        "brand": "Tech Solutions",
+        "category": "Electronics",
+        "images": "https://i.ibb.co/0ZHbCzZ/responsive-design.png"
+      },      
+      {
+        "id": 12,
+        "title": "Diamond Stud Earrings",
+        "description": "Diamond Stud Earrings are a timeless and elegant accessory that adds a touch of sophistication to any outfit. These exquisite earrings feature brilliant round-cut diamonds set in a sleek and stylish design. The diamonds are carefully selected for their exceptional clarity and sparkle, ensuring a captivating and luxurious look.",
+        "originalPrice": 299.99,
+        "discountPrice": 249.99,
+        "rating": 4.9,
+        "availability": "In Stock",
+        "brand": "Luxury Jewelers",
+        "category": "Accessories",
+        "images": "https://i.ibb.co/bF3vnd2/bags.png"
+      }
+              
+          
+]

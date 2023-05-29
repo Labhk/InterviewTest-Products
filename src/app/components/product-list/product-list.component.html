@@ -1,0 +1,27 @@
+<div class="cards">
+    <mat-card class="example-card" *ngFor="let product of productList" (click)="navigateToProductDetails(product.id)">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{ product.title }}</mat-card-title>
+          <mat-card-subtitle>Brand - {{ product.brand }}</mat-card-subtitle>
+          <mat-card-subtitle color="accent">
+            In Stock
+          </mat-card-subtitle>
+          <img mat-card-sm-image [src]="product.images">
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="content">
+          <div class="rating">
+            <mat-icon color="accent">star</mat-icon>
+            <span class="rate">{{ product.rating }}</span>
+          </div>
+          <div class="price">
+            <span class="original-price">${{ product.originalPrice }}</span>
+            <span class="discounted-price">${{ product.discountPrice }}</span>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

@@ -1,0 +1,64 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+  
+.example-card {
+    flex-basis: calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px);
+    margin: 10px; 
+    cursor: pointer;
+}
+.example-card:hover {
+    background-color: #ecf0ff;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rate {
+    margin-left: 5px;
+    padding-top: 2px;
+    font-size: 16px;
+}
+
+.price {  
+    justify-content: flex-end;
+}
+
+.original-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+}
+
+.discounted-price {
+    font-weight:500;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+.example-card {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+}
+
+@media screen and (max-width: 580px) {
+.example-card {
+    flex-basis: 100%;
+    max-width: 100%; 
+}
+}

@@ -1,0 +1,14 @@
+.add-product{
+    display: flex;
+    justify-content: center;
+}
+
+.spacer{
+    padding: 10px;
+}
+
+.sub-title{
+    padding-left: 15px;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
