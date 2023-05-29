@@ -12,7 +12,7 @@ Next, Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The
 
 ## Backend
 
-Backend APIs are Deployed with Render.
+Backend APIs are Deployed with Cyclic.sh
 
 Backend Code available at `/back-end`
 
