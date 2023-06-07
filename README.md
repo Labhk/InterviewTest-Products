@@ -10,6 +10,16 @@ First, Clone this Repo then run command, `npm install`.
 
 Next, Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## Screenshot
+
+![](2023-06-07-14-33-25.png)
+![](2023-06-07-14-34-01.png)
+![](2023-06-07-14-34-51.png)
+![](2023-06-07-14-35-07.png)
+![](2023-06-07-14-35-33.png)
+![](2023-06-07-14-35-51.png)
+![](2023-06-07-14-36-09.png)
+
 ## Backend
 
 Backend APIs are Deployed with Cyclic.sh
