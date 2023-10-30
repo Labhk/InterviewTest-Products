@@ -1,8 +1,7 @@
-# Interview test - Products
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
-This Project is Deployed with Netlify (https://pro-ducts.netlify.app/)
+This Project is Deployed with Vercel (https://product-peek.vercel.app/)
 
 ## Local Development
 
